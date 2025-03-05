@@ -3,7 +3,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="My second JS webpage" />
+    <meta name="description" content="The Hello, World! program in JS" />
     <meta name="keywords" content="mths, icd2o" />
     <meta name="author" content="Lucas Nguyen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <link rel="manifest" href="site.webmanifest" />
-    <title>My Second webpage, with JS</title>
+    <title>The "Hello, World!" program, JS</title>
   </head>
 
   <body>
@@ -29,29 +29,20 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">This is my header</span>
+          <span class="mdl-layout-title">The "Hello, World!" program, JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="page-content">you should click the button...</div>
-        <img src="./images/computer.jpg" />
+        <div class="right-image">
+          <img
+            src="./images/Hello_World_Brian_Kernighan_1978.jpg"
+            alt="laptop image"
+          />
+        </div>
+        <div class="page-content">Click the button below.</div>
+        <br />
         <!-- Simple Textfield for integers-->
         <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input"
-              >Length of ... (mm)</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
-          </div>
           <br />
           <!-- Accent-colored raised button with ripple -->
           <button
@@ -59,12 +50,12 @@
             onclick="myButtonClicked()"
             type="button"
           >
-            Calculate
+            Click Here
           </button>
         </form>
         <br />
         <div class="page-content-answer">
-          <div id="answer">The answer is: ...</div>
+          <div id="answer"></div>
         </div>
       </main>
     </div>
